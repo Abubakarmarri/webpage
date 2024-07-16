@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.sepration {
+  height: 1px;
+  width: 80%;
+  background-color: black;
+  margin: auto;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+#navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  border-bottom: solid 1px white;
+  color: white;
+  background-color: black;
+}
+
+#logo {
+  padding: 20px;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#navbar ul a {
+  text-decoration: none;
+  padding: 8px 17px;
+  border-radius: 17px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+#icons {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+#menubar {
+  display: none;
+}
+
+#exit {
+  font-size: 2rem;
+  padding: 0px 5px;
+  color: white;
+}
+
+#icons i {
+  cursor: pointer;
+}
+
+#cartbar {
+  margin-right: 25px;
+}
+
+#searchbar {
+  margin-right: 25px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#sidebar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sidebar li {
+  width: 100%;
+  height: 50px;
+}
+
+#sidebar a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#hero {
+  height: 80vh;
+  width: 100%;
+  background: url(/Bg.png) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+#hero h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px 200px;
+  opacity: 0.9;
+}
+
+#hero p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 10px 200px;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+#hero button {
+  padding: 11px 21px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: solid 3px white;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#hero button a {
+  text-decoration: none;
+  color: white;
+}
+
+#page1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page1 h1 {
+  padding: 23px;
+}
+
+.catogries {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 10px 10px 100px 10px;
+}
+
+.catogries #box {
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#box a {
+  height: 100%;
+  width: 100%;
+}
+
+.png1 {
+  background: url(/01.jpg) no-repeat center center/cover;
+}
+
+.png2 {
+  background: url(/02.jpg) no-repeat center center/cover;
+}
+
+.png3 {
+  background: url(/03.jpg) no-repeat center center/cover;
+}
+
+.boxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.boxs button {
+  padding: 7px 23px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 11px;
+}
+
+.boxs h2 {
+  margin-top: 11px;
+  font-size: 1.7rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#page2 h1 {
+  padding: 10px 10px 10px 60px;
+}
+
+.heading a {
+  color: black;
+  font-size: 1rem;
+}
+
+#page2 a {
+  font-size: 1rem;
+  color: black;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 200px;
+}
+
+.products {
+  height: 490px;
+  width: 360px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px black;
+  border-radius: 25px;
+}
+
+.pro {
+  height: 75%;
+  width: 93%;
+  margin: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+}
+
+.btns button {
+  padding: 5px 17px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pro img {
+  height: 100%;
+  width: 100%;
+}
+
+.worning {
+  width: 70%;
+  height: 100px;
+  border: solid 2px black;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 70px 15%;
+}
+
+.worning .alert {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description h1 {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.description p {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.des {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 100px 10px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.des .revew {
+  height: 120px;
+  width: 300px;
+  background-color: #dee0e7;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.subscribe h1 {
+  font-size: 3rem;
+  padding: 11px;
+  text-align: center;
+}
+
+.subscribe p {
+  font-size: 1.1rem;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.email input {
+  border: solid 2px;
+  font-weight: 500;
+  padding: 12px 180px 12px 1px;
+  border-radius: 4px;
+}
+
+.email button {
+  padding: 11px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#footer {
+  height: 30vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer p {
+  font-size: 1rem;
+  color: white;
+}

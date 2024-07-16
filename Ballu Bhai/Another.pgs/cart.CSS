@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#part1 {
+  height: 50vh;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#part1 .box {
+  height: 350px;
+  width: 500px;
+  border: solid 3px black;
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#part2 {
+  height: 50vh;
+  width: 50%;
+}
